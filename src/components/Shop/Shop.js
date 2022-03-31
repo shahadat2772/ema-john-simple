@@ -8,18 +8,21 @@ import {
   getStoredCart,
 } from "../../utilities/fakedb";
 import "./Shop.css";
+import useProducts from "../../hooks/useProducts";
 
 const Shop = () => {
-  const [products, setProducts] = useState([]);
+  // Using custom hook for Getting loaded PRODUCT
+  const [products, setProducts] = useProducts();
+
   const [cart, setCart] = useState([]);
 
-  useEffect(() => {
-    fetch("products.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setProducts(data);
-      });
-  }, []);
+  // useEffect(() => {
+  //   fetch("products.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setProducts(data);
+  //     });
+  // }, []);
 
   useEffect(() => {
     const storedCart = getStoredCart();
