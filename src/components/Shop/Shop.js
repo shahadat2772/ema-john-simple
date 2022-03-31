@@ -9,6 +9,7 @@ import {
 } from "../../utilities/fakedb";
 import "./Shop.css";
 import useProducts from "../../hooks/useProducts";
+import { Link } from "react-router-dom";
 
 const Shop = () => {
   // Using custom hook for Getting loaded PRODUCT
@@ -67,7 +68,11 @@ const Shop = () => {
         ))}
       </div>
       <div className="cartContainer">
-        <Cart cart={cart}></Cart>
+        <Cart cart={cart}>
+          <Link className="reviewButton" to="/orders">
+            <p>Review Order</p>
+          </Link>
+        </Cart>
       </div>
     </div>
   );

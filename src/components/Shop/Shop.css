@@ -13,3 +13,22 @@
 .cartContainer {
   background: rgba(255, 153, 0, 0.3);
 }
+
+.reviewButton {
+  text-decoration: none;
+}
+.reviewButton p {
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+  background: rgba(255, 153, 0, 1);
+  width: 232px;
+  height: 48px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reviewButton p:hover {
+  color: white;
+}

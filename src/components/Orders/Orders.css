@@ -15,3 +15,23 @@
   margin: auto;
   border-radius: 8px;
 }
+
+.proceedBtn {
+  text-decoration: none;
+}
+
+.proceedBtn p {
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+  background: rgba(255, 153, 0, 1);
+  width: 232px;
+  height: 48px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proceedBtn p:hover {
+  color: white;
+}
