@@ -3,6 +3,7 @@ import "./App.css";
 import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Inventory from "./components/Inventory/Inventory";
+import Login from "./components/Login/Login";
 import Orders from "./components/Orders/Orders";
 import Shop from "./components/Shop/Shop";
 
@@ -19,6 +20,9 @@ function App() {
         <Route path="/orders" element={<Orders></Orders>}></Route>
         {/* Inventory */}
         <Route path="/inventory" element={<Inventory></Inventory>}></Route>
+        {/* Login */}
+        <Route path="/login" element={<Login></Login>}></Route>
+        {/* About */}
         <Route path="/about" element={<About></About>}></Route>
       </Routes>
     </div>

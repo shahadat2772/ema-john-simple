@@ -1,0 +1,25 @@
+.signWith {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.loginContainer button {
+  margin: 4px;
+}
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.useContainer img {
+  border-radius: 50%;
+}
+.useContainer {
+  text-align: center;
+  margin: 30px;
+}
