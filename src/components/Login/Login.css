@@ -1,6 +1,6 @@
 .form-container {
   width: 500px;
-  height: 600px;
+  /* height: 600px; */
   margin: 50px auto;
   background: #ffffff;
   border: 1px solid #95a0a7;
@@ -60,4 +60,8 @@
 .form-link {
   color: #ff9900;
   text-decoration: none;
+}
+
+.error {
+  color: rgba(255, 0, 0, 0.623);
 }

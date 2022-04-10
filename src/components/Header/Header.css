@@ -3,9 +3,11 @@
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-left: 145px;
   padding-right: 145px;
+}
+.links {
+  margin-left: auto;
 }
 
 .headerNav a {
@@ -16,5 +18,18 @@
 }
 
 .headerNav a:hover {
+  color: orange;
+}
+
+.signOutButton {
+  color: white;
+  font-size: 17px;
+  margin-left: 36px;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.signOutButton:hover {
   color: orange;
 }
