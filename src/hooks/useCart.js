@@ -14,7 +14,7 @@ const useCart = () => {
     const keys = Object.keys(storedCart);
     console.log(keys);
 
-    fetch("http://localhost:5000/productByKeys", {
+    fetch("https://blooming-lowlands-98485.herokuapp.com/productByKeys", {
       method: "POST",
       headers: {
         "content-type": "application/json",

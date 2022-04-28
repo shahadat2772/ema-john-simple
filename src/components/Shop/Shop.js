@@ -23,7 +23,7 @@ const Shop = () => {
 
   // Getting products quantity and calculating the pages quantity
   useEffect(() => {
-    fetch("http://localhost:5000/productCount")
+    fetch("https://blooming-lowlands-98485.herokuapp.com/productCount")
       .then((res) => res.json())
       .then((data) => {
         const count = data?.count;
@@ -33,7 +33,9 @@ const Shop = () => {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/product?page=${page}&size=${size}`)
+    fetch(
+      `https://blooming-lowlands-98485.herokuapp.com/product?page=${page}&size=${size}`
+    )
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, [page, size]);
@@ -47,7 +49,7 @@ const Shop = () => {
   //   for (const id in storedCart) {
   //     // let addedProduct;
   //     // if (id) {
-  //     //   fetch(`http://localhost:5000/product/${id}`)
+  //     //   fetch(`https://blooming-lowlands-98485.herokuapp.com/product/${id}`)
   //     //     .then((res) => res.json())
   //     //     .then((data) => (addedProduct = data));
   //     // }
@@ -119,7 +121,7 @@ const Shop = () => {
               10
             </option>
             <option value="15">15</option>
-            <option value="10">20</option>
+            <option value="20">20</option>
           </select>
         </div>
       </div>
