@@ -4,7 +4,7 @@ import "./Cart.css";
 const Cart = (props) => {
   const { cart } = props;
 
-  console.log(props);
+  console.log(cart);
   //   const getTotal = (value) => {
   //     const total = cart.reduce(
   //       (previous, current) => previous + current.value,

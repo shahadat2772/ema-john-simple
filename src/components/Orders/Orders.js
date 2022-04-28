@@ -9,11 +9,11 @@ import "./Orders.css";
 const Orders = () => {
   const [products, setProducts] = useProducts();
 
-  const [cart, setCart] = useCart(products);
+  const [cart, setCart] = useCart();
 
   const removeCartItem = (id) => {
     console.log(id, "Removes");
-    const newCart = cart.filter((product) => product.id !== id);
+    const newCart = cart.filter((product) => product._id !== id);
     removeFromDb(id);
     setCart(newCart);
   };
@@ -23,7 +23,7 @@ const Orders = () => {
       <div className="cartItemContainer">
         {cart.map((product) => (
           <ReviewItem
-            key={product.id}
+            key={product._id}
             removeCartItem={removeCartItem}
             product={product}
           ></ReviewItem>

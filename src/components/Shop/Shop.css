@@ -32,3 +32,20 @@
 .reviewButton p:hover {
   color: white;
 }
+
+.pagination {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pagination button {
+  margin: 6px;
+  background-color: white;
+  border: 1px solid orange;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.pagination .selected {
+  background-color: orange;
+  color: white;
+}
